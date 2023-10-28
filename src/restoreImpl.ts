@@ -62,6 +62,8 @@ export async function restoreImpl(
                 ].join(", ")}`
             );
 
+            core.setOutput(Outputs.CacheHit, "false");
+
             return;
         }
 
